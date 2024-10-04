@@ -17,6 +17,7 @@ $primary-color : #1a1a1a;
 $secondary-color : #ec864a;
 $button-text-color : #d3fbd8;
 $white : #ffff;
+$black : #100f0f;
 
 
 .philosopher {
@@ -43,6 +44,11 @@ $white : #ffff;
 a {
     text-decoration: none;
     color: $white;
+}
+hr {
+    background-color: $black;
+    height: 3px;
+    border: 0;
 }
 .main-section {
     background-color: $primary-color;
@@ -127,12 +133,95 @@ a {
                 height: 50%;
                 background-color: white;
                 color: white;
-                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                // clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
             }           
             img {
                 width: 70%;
             }
         }
+    }
+}
+.about-section {
+    min-height: 70vh;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .about-container {
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // padding: 3rem 5rem;
+        max-width: 700px;
+        // background-color: white;
+        text-align: center;
+        color: $white;
+        z-index: -2;
+        position: relative;
+        img {
+            width: 150px;
+            height: 150px;
+        }
+        h2 {
+            font-weight: 600;
+            font-size: 2rem;
+            letter-spacing: 1.2px;
+            margin-top: 0.8rem;
+        }
+        h4 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 0.8rem 0;
+            background-image: linear-gradient(to right, #04abec, $white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        p {
+            line-height: 1.4;
+            margin-bottom: 1.5rem;
+        }
+        a {
+            background-color: transparent;
+            color: $white;
+            padding: 0.5rem;
+            border: 1px solid transparent;
+            border-image: linear-gradient(to right, #04abec, #ffff) 10;
+            border-radius: 14px;
+        }
+        .btn-container {
+            z-index: -2;
+        }
+        .btn:before {
+            content: "";
+            width: 240px;
+            height: 90px;
+            line-height: 90px;
+            border: 0;
+            border-radius: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0) scaleX(1.05) scaleY(1.1);
+            background: linear-gradient(
+            0deg,
+            rgba(59, 173, 227, 1) 0%,
+            rgba(87, 111, 230, 1) 25%,
+            rgba(152, 68, 183, 1) 51%,
+            rgba(255, 53, 127, 1) 100%
+            );
+            z-index: -1;
+          }
+        .btn {
+            width: 240px;
+            height: 90px;
+            border: 0;
+            border-radius: 90px;
+            font-size: 20px;
+            background: #fff;
+            color: red;
+            position: relative;
+          }
     }
 }
 
