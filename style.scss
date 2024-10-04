@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Yeseva+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+$primary-color : #1a1a1a;
+// test color #14342b #426358 #24a8b8 #00c6cf #068488 #068488 #fa9d66
+$secondary-color : #ec864a;
+$button-text-color : #d3fbd8;
+$white : #ffff;
+
+
+.philosopher {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.yeseva-one {
+    font-family: "Yeseva One", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.fredoka {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+.main-section {
+    background-color: $primary-color;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .main-container {
+        max-width: 900px;
+    }
+    header {
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+        .name {
+            font-size: 1.3rem;
+        }
+        nav {
+            ul {
+                display: flex;
+                li {
+                    list-style-type: none;
+                    margin: 0 1rem;
+                    a {
+
+                    }
+                }
+
+            }
+        }
+    }
+    main {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        .left-side {
+            // background-color: aqua;
+            width: 50%;
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 60vh;
+            .left-side-text {
+                h1 {
+                    font-size: 2.5rem;
+                    font-family: "Yeseva One", sans-serif;
+                    padding-right: 1rem;
+                    max-width: 60%;
+                    line-height: 1.3;
+                }
+                .intro-text {
+                    margin: 1.8rem 0;
+                }
+                a {
+                    background-color: $secondary-color;
+                    border-radius: 12px;
+                    padding: 0.8rem 1.2rem;
+                    color: $button-text-color;
+                    font-weight: 500;
+                    box-shadow: 6px 5px 25px -6px rgba(159, 152, 152, 0.75);
+                }
+            }
+            .main-content {
+                display: flex;
+                .content-item {
+                    margin-right: 2.5rem;
+                    p {
+
+                    }
+                    h3 {
+
+                    }
+                }
+            }
+        }
+        .right-side {    
+            width: 50%;
+            text-align: right;
+            .image-background {
+                width: 50%;
+                height: 50%;
+                background-color: white;
+                color: white;
+                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            }           
+            img {
+                width: 70%;
+            }
+        }
+    }
+}
+
+//clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+//clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
