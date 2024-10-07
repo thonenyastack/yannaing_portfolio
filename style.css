@@ -51,27 +51,27 @@ hr {
 .main-section .main-container {
   max-width: 900px;
 }
-.main-section header {
+.main-section .main-container header {
   padding: 2rem 0;
   display: flex;
   justify-content: space-between;
 }
-.main-section header .name {
+.main-section .main-container header .name {
   font-size: 1.3rem;
 }
-.main-section header nav ul {
+.main-section .main-container header nav ul {
   display: flex;
 }
-.main-section header nav ul li {
+.main-section .main-container header nav ul li {
   list-style-type: none;
   margin: 0 1rem;
 }
-.main-section main {
+.main-section .main-container main {
   display: flex;
   align-items: center;
   margin-top: 1rem;
 }
-.main-section main .left-side {
+.main-section .main-container main .left-side {
   width: 50%;
   color: white;
   display: flex;
@@ -79,17 +79,17 @@ hr {
   justify-content: space-between;
   height: 60vh;
 }
-.main-section main .left-side .left-side-text h1 {
+.main-section .main-container main .left-side .left-side-text h1 {
   font-size: 2.5rem;
   font-family: "Yeseva One", sans-serif;
   padding-right: 1rem;
   max-width: 60%;
   line-height: 1.3;
 }
-.main-section main .left-side .left-side-text .intro-text {
+.main-section .main-container main .left-side .left-side-text .intro-text {
   margin: 1.8rem 0;
 }
-.main-section main .left-side .left-side-text a {
+.main-section .main-container main .left-side .left-side-text a {
   background-color: #ec864a;
   border-radius: 12px;
   padding: 0.8rem 1.2rem;
@@ -97,39 +97,39 @@ hr {
   font-weight: 500;
   box-shadow: 6px 5px 25px -6px rgba(159, 152, 152, 0.75);
 }
-.main-section main .left-side .main-content {
+.main-section .main-container main .left-side .main-content {
   display: flex;
 }
-.main-section main .left-side .main-content .content-item {
+.main-section .main-container main .left-side .main-content .content-item {
   margin-right: 2.5rem;
 }
-.main-section main .right-side {
+.main-section .main-container main .right-side {
   width: 50%;
   text-align: right;
 }
-.main-section main .right-side .image-background {
+.main-section .main-container main .right-side .image-background {
   width: 50%;
   height: 50%;
   background-color: white;
   color: white;
 }
-.main-section main .right-side img {
+.main-section .main-container main .right-side img {
   width: 70%;
 }
 
 .about-section {
-  min-height: 70vh;
+  min-height: 90vh;
   background-color: #1a1a1a;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: -2;
+  position: relative;
 }
 .about-section .about-container {
   max-width: 700px;
   text-align: center;
   color: white;
-  z-index: -2;
-  position: relative;
 }
 .about-section .about-container img {
   width: 150px;
@@ -168,8 +168,8 @@ hr {
 }
 .about-section .about-container .btn:before {
   content: "";
-  width: 240px;
-  height: 90px;
+  width: 120px;
+  height: 40px;
   line-height: 90px;
   border: 0;
   border-radius: 50px;
@@ -177,16 +177,119 @@ hr {
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0) scaleX(1.05) scaleY(1.1);
-  background: linear-gradient(0deg, rgb(59, 173, 227) 0%, rgb(87, 111, 230) 25%, rgb(152, 68, 183) 51%, rgb(255, 53, 127) 100%);
+  background: linear-gradient(0deg, rgb(59, 173, 227) 0%, rgb(87, 111, 230) 25%, rgb(152, 68, 183) 51%, rgb(82, 41, 143) 100%);
   z-index: -1;
 }
 .about-section .about-container .btn {
-  width: 240px;
-  height: 90px;
+  width: 120px;
+  height: 40px;
   border: 0;
   border-radius: 90px;
   font-size: 20px;
-  background: #fff;
-  color: red;
+  background: #1a1a1a;
+  color: #d1d7d9;
   position: relative;
+}
+
+.skills-section {
+  min-height: 80vh;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+}
+.skills-section .skills-container {
+  min-width: 800px;
+  color: white;
+}
+.skills-section .skills-container h2 {
+  text-align: center;
+}
+.skills-section .skills-container .programming-language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.skills-section .skills-container .programming-language .progress-container {
+  width: 40%;
+}
+.skills-section .skills-container .programming-language .progress-container .progress-bar {
+  min-width: 200px;
+  background-color: black;
+  border-radius: 13px;
+  padding: 3px;
+}
+.skills-section .skills-container .programming-language .progress-container .progress-bar-content {
+  width: 80%;
+  background-color: #ec864a;
+  height: 8px;
+  border-radius: 10px;
+  position: relative;
+}
+.skills-section .skills-container .programming-language .progress-container .progress-bar-content .go {
+  width: 50%;
+  background-color: #ec864a;
+  height: 8px;
+  border-radius: 10px;
+  position: relative;
+}
+.skills-section .skills-container .programming-language .progress-container .progress-bar-content span {
+  position: absolute;
+  background-color: #e8874e;
+  border-radius: 50%;
+  display: inline-block;
+  height: 18px;
+  width: 20px;
+  top: -4px;
+  left: 240px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.projects-section {
+  min-height: 90vh;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.projects-section .projects-container {
+  max-width: 800px;
+}
+.projects-section .projects-container .project {
+  max-height: 300px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  margin-top: 1.5rem;
+}
+.projects-section .projects-container .project img {
+  background-color: hsl(197, 97%, 47%);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  grid-column: 1/6;
+  grid-row: 1/9;
+}
+.projects-section .projects-container .project .project-description {
+  padding: 1rem;
+  background-color: #16263b;
+}
+.projects-section .projects-container .project .project-description {
+  grid-column: 5/-1;
+  grid-row: 4/6;
+  align-self: center;
+}
+.projects-section .projects-container .project .project-subtitle {
+  grid-column: 7/9;
+  grid-row: 1/2;
+  text-align: right;
+  align-self: self-end;
+}
+.projects-section .projects-container .project .project-title {
+  grid-column: 8/9;
+  grid-row: 2/3;
+  text-align: right;
+  align-self: self-end;
 }/*# sourceMappingURL=style.css.map */

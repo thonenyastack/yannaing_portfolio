@@ -58,95 +58,94 @@ hr {
     justify-content: center;
     .main-container {
         max-width: 900px;
-    }
-    header {
-        padding: 2rem 0;
-        display: flex;
-        justify-content: space-between;
-        .name {
-            font-size: 1.3rem;
-        }
-        nav {
-            ul {
-                display: flex;
-                li {
-                    list-style-type: none;
-                    margin: 0 1rem;
-                    a {
-
-                    }
-                }
-
-            }
-        }
-    }
-    main {
-        display: flex;
-        align-items: center;
-        margin-top: 1rem;
-        .left-side {
-            // background-color: aqua;
-            width: 50%;
-            color: $white;
+        header {
+            padding: 2rem 0;
             display: flex;
-            flex-direction: column;
             justify-content: space-between;
-            height: 60vh;
-            .left-side-text {
-                h1 {
-                    font-size: 2.5rem;
-                    font-family: "Yeseva One", sans-serif;
-                    padding-right: 1rem;
-                    max-width: 60%;
-                    line-height: 1.3;
-                }
-                .intro-text {
-                    margin: 1.8rem 0;
-                }
-                a {
-                    background-color: $secondary-color;
-                    border-radius: 12px;
-                    padding: 0.8rem 1.2rem;
-                    color: $button-text-color;
-                    font-weight: 500;
-                    box-shadow: 6px 5px 25px -6px rgba(159, 152, 152, 0.75);
-                }
+            .name {
+                font-size: 1.3rem;
             }
-            .main-content {
-                display: flex;
-                .content-item {
-                    margin-right: 2.5rem;
-                    p {
-
+            nav {
+                ul {
+                    display: flex;
+                    li {
+                        list-style-type: none;
+                        margin: 0 1rem;
                     }
-                    h3 {
-
-                    }
+    
                 }
             }
         }
-        .right-side {    
-            width: 50%;
-            text-align: right;
-            .image-background {
+        main {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+            .left-side {
+                // background-color: aqua;
                 width: 50%;
-                height: 50%;
-                background-color: white;
-                color: white;
-                // clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-            }           
-            img {
-                width: 70%;
+                color: $white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 60vh;
+                .left-side-text {
+                    h1 {
+                        font-size: 2.5rem;
+                        font-family: "Yeseva One", sans-serif;
+                        padding-right: 1rem;
+                        max-width: 60%;
+                        line-height: 1.3;
+                    }
+                    .intro-text {
+                        margin: 1.8rem 0;
+                    }
+                    a {
+                        background-color: $secondary-color;
+                        border-radius: 12px;
+                        padding: 0.8rem 1.2rem;
+                        color: $button-text-color;
+                        font-weight: 500;
+                        box-shadow: 6px 5px 25px -6px rgba(159, 152, 152, 0.75);
+                    }
+                }
+                .main-content {
+                    display: flex;
+                    .content-item {
+                        margin-right: 2.5rem;
+                        p {
+    
+                        }
+                        h3 {
+    
+                        }
+                    }
+                }
+            }
+            .right-side {    
+                width: 50%;
+                text-align: right;
+                .image-background {
+                    width: 50%;
+                    height: 50%;
+                    background-color: white;
+                    color: white;
+                    // clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                }           
+                img {
+                    width: 70%;
+                }
             }
         }
     }
 }
 .about-section {
-    min-height: 70vh;
+    min-height: 90vh;
     background-color: $primary-color;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -2;
+    position: relative;
     .about-container {
         // display: flex;
         // flex-direction: column;
@@ -156,8 +155,7 @@ hr {
         // background-color: white;
         text-align: center;
         color: $white;
-        z-index: -2;
-        position: relative;
+        
         img {
             width: 150px;
             height: 150px;
@@ -194,8 +192,8 @@ hr {
         }
         .btn:before {
             content: "";
-            width: 240px;
-            height: 90px;
+            width: 120px;
+            height: 40px;
             line-height: 90px;
             border: 0;
             border-radius: 50px;
@@ -208,20 +206,120 @@ hr {
             rgba(59, 173, 227, 1) 0%,
             rgba(87, 111, 230, 1) 25%,
             rgba(152, 68, 183, 1) 51%,
-            rgba(255, 53, 127, 1) 100%
+            rgb(82, 41, 143) 100%
             );
             z-index: -1;
           }
         .btn {
-            width: 240px;
-            height: 90px;
+            width: 120px;
+            height: 40px;
             border: 0;
             border-radius: 90px;
             font-size: 20px;
-            background: #fff;
-            color: red;
+            background: $primary-color;
+            color: #d1d7d9;
             position: relative;
           }
+    }
+}
+.skills-section {
+    min-height: 80vh;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    .skills-container {
+        min-width: 800px;
+        color: $white;
+        h2 {
+            text-align: center;
+        }
+        .programming-language {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            .progress-container {
+                width: 40%;
+                .progress-bar {
+                    min-width: 200px;
+                    background-color: black;
+                    border-radius: 13px;
+                    padding: 3px;
+                }
+                .progress-bar-content {
+                    width: 80%;
+                    background-color: $secondary-color;
+                    height: 8px;
+                    border-radius: 10px;
+                    position: relative;
+                }
+                .progress-bar-content .go {
+                    width: 50%;
+                    background-color: $secondary-color;
+                    height: 8px;
+                    border-radius: 10px;
+                    position: relative;
+                }
+                .progress-bar-content span {
+                    position: absolute;
+                    background-color: #e8874e;
+                    border-radius: 50%;
+                    display: inline-block;
+                    height: 18px;
+                    width: 20px;
+                    top: -4px;
+                    left: 240px;
+                    font-size: 10px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+.projects-section {
+    min-height: 90vh;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    color: $white;
+    .projects-container {
+        max-width: 800px;
+        .project {
+            max-height: 300px;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            margin-top: 1.5rem;
+            img {
+                background-color: hsl(197, 97%, 47%);
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                grid-column: 1/6;
+                grid-row: 1/9;
+            }
+            .project-description {
+                padding: 1rem;
+                background-color: #16263b;
+            }
+            .project-description {
+                grid-column: 5/-1;
+                grid-row: 4/6;
+                align-self: center;
+            }
+            .project-subtitle {
+                grid-column: 7/9;
+                grid-row: 1/2;
+                text-align: right;
+                align-self: self-end;
+            }
+            .project-title {
+                grid-column: 8/9;
+                grid-row: 2/3;
+                text-align: right;
+                align-self: self-end;
+            }
+        }
     }
 }
 
