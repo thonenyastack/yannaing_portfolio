@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yan Naing Portfolio</title>
     <link rel="stylesheet" href="./style.css" >
+    <link rel="stylesheet" href="./vertical-timeline.css"
 </head>
 <body>
     <section class="main-section">
@@ -64,6 +65,7 @@
             <!-- </div> -->
         </div>
     </section>
+    <hr>
     <section class="skills-section">
         <div class="skills-container">
             <h2>Skills</h2>
@@ -80,13 +82,77 @@
                     <span>Go</span>
                     <div class="progress-bar">
                         <div class="progress-bar-content go">
+                            <span>50%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <span>React</span>
+                    <div class="progress-bar">
+                        <div class="progress-bar-content react">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <span>NodeJS</span>
+                    <div class="progress-bar">
+                        <div class="progress-bar-content react">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <span>Git</span>
+                    <div class="progress-bar">
+                        <div class="progress-bar-content react">
                             <span>60%</span>
                         </div>
                     </div>
                 </div>
+                <div class="progress-container">
+                    <span>MongoDB</span>
+                    <div class="progress-bar">
+                        <div class="progress-bar-content react">
+                            <span>65%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <span>SQL</span>
+                    <div class="progress-bar">
+                        <div class="progress-bar-content react">
+                            <span>60%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <span>Bash/Shell Scripting</span>
+                    <div class="progress-bar">
+                        <div class="progress-bar-content react">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <span>Linux</span>
+                    <div class="progress-bar">
+                        <div class="progress-bar-content react">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <span>Docker&Kubernetes</span>
+                    <div class="progress-bar">
+                        <div class="progress-bar-content react">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
             <div class="frameworks">
-
             </div>
         </div>
     </section>
@@ -112,7 +178,7 @@
                 </p>
                 <p class="project-subtitle">Jobsheet Management System</p>
                 <h3 class="project-title">PlannyWork</h3>
-                <div class="project-tech">
+                <!-- <div class="project-tech">
                     <ul>
                         <li>ReactJS</li>
                         <li>NodeJS</li>
@@ -120,13 +186,60 @@
                         <li>Rest API</li>
                     </ul>
 
-                </div>
+                </div> -->
                 <div class="project">
 
                 </div>
             </div>
         </div>
     </section>
+    <section>
+        <div id="vt6">
+            <div data-vtdate="September 2016">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>
+                    Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
+                </p>
+            </div>
+            <div data-vtdate="March 2016">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>
+                    Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
+                </p>
+            </div>
+            <div data-vtdate="January 2016">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>
+                    Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
+                </p>
+            </div>
+            <div data-vtdate="September 2016">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>
+                    Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
+                </p>
+            </div>
+            <div data-vtdate="March 2016">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>
+                    Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
+                </p>
+            </div>
+            <div data-vtdate="January 2016">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>
+                    Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
+                </p>
+            </div>
+        </div><!-- End vt6 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="./vertical-timeline.js"></script>
+    </section>
   
+    <script>
+        $('#vt6').verticalTimeline({
+            animate: 'slide'
+        });
+    </script>
 </body>
 </html>

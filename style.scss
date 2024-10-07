@@ -7,6 +7,7 @@
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
+    // font-size: 18px;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
@@ -14,7 +15,8 @@
 
 $primary-color : #1a1a1a;
 // test color #14342b #426358 #24a8b8 #00c6cf #068488 #068488 #fa9d66
-$secondary-color : #ec864a;
+// $secondary-color : #ec864a;
+$secondary-color : #09aded;
 $button-text-color : #d3fbd8;
 $white : #ffff;
 $black : #100f0f;
@@ -52,7 +54,7 @@ hr {
 }
 .main-section {
     background-color: $primary-color;
-    min-height: 100vh;
+    min-height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -103,7 +105,7 @@ hr {
                         background-color: $secondary-color;
                         border-radius: 12px;
                         padding: 0.8rem 1.2rem;
-                        color: $button-text-color;
+                        color: $white;
                         font-weight: 500;
                         box-shadow: 6px 5px 25px -6px rgba(159, 152, 152, 0.75);
                     }
@@ -111,13 +113,7 @@ hr {
                 .main-content {
                     display: flex;
                     .content-item {
-                        margin-right: 2.5rem;
-                        p {
-    
-                        }
-                        h3 {
-    
-                        }
+                        margin-right: 2.5rem;    
                     }
                 }
             }
@@ -139,7 +135,7 @@ hr {
     }
 }
 .about-section {
-    min-height: 90vh;
+    min-height: 70vh;
     background-color: $primary-color;
     display: flex;
     justify-content: center;
@@ -151,11 +147,10 @@ hr {
         // flex-direction: column;
         // align-items: center;
         // padding: 3rem 5rem;
-        max-width: 700px;
+        max-width: 800px;
         // background-color: white;
         text-align: center;
         color: $white;
-        
         img {
             width: 150px;
             height: 150px;
@@ -223,26 +218,30 @@ hr {
     }
 }
 .skills-section {
-    min-height: 80vh;
+    min-height: 70vh;
     background-color: $primary-color;
     display: flex;
     justify-content: center;
     .skills-container {
-        min-width: 800px;
+        margin-top: 2rem;
+        max-width: 900px;
         color: $white;
         h2 {
             text-align: center;
         }
         .programming-language {
             display: flex;
-            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
             align-items: center;
-            gap: 15px;
+            margin-top: 1.5rem;
+            // background-color: #04abec;
             .progress-container {
-                width: 40%;
+                min-width: 350px;
+                margin: 1rem 0;
                 .progress-bar {
-                    min-width: 200px;
-                    background-color: black;
+                    margin-top: 0.5rem;
+                    background-color: rgb(114, 113, 113);
                     border-radius: 13px;
                     padding: 3px;
                 }
@@ -253,8 +252,15 @@ hr {
                     border-radius: 10px;
                     position: relative;
                 }
-                .progress-bar-content .go {
+                .go {
                     width: 50%;
+                    background-color: $secondary-color;
+                    height: 8px;
+                    border-radius: 10px;
+                    position: relative;
+                }
+                .react {
+                    width: 75%;
                     background-color: $secondary-color;
                     height: 8px;
                     border-radius: 10px;
@@ -262,36 +268,62 @@ hr {
                 }
                 .progress-bar-content span {
                     position: absolute;
-                    background-color: #e8874e;
+                    background-color: $secondary-color;
                     border-radius: 50%;
-                    display: inline-block;
-                    height: 18px;
-                    width: 20px;
-                    top: -4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 36px;
+                    height: 36px;
+                    top: -12px;
+                    padding: 5px;
                     left: 240px;
-                    font-size: 10px;
+                    font-size: 14px;
                     text-align: center;
+                }
+                .go span {
+                    left: 160px;
+                }
+                .react span {
+                    left: 230px;
                 }
             }
         }
     }
 }
 .projects-section {
-    min-height: 90vh;
+    min-height: 100vh;
     background-color: $primary-color;
     display: flex;
     justify-content: center;
     color: $white;
     .projects-container {
-        max-width: 800px;
+        // background-color: #04abec;
+        max-width: 1000px;
+        h4 {
+            position: relative;
+            max-width: 550px;
+            font-size: 1.2rem;
+            // background-color: #04abec;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 250px;
+                height: 2px;
+                inset: 0;
+                margin: auto;
+                margin-right: 30px;
+                background-color: $white;
+            }
+        }
         .project {
-            max-height: 300px;
+            max-height: 400px;
             display: grid;
             grid-template-columns: repeat(8, 1fr);
-            grid-template-rows: repeat(8, 1fr);
+            grid-template-rows: repeat(9, 1fr);
             margin-top: 1.5rem;
             img {
-                background-color: hsl(197, 97%, 47%);
+                // background-color: hsl(197, 97%, 47%);
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
