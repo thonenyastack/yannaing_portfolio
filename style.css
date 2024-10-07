@@ -43,7 +43,7 @@ hr {
 
 .main-section {
   background-color: #1a1a1a;
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -90,10 +90,10 @@ hr {
   margin: 1.8rem 0;
 }
 .main-section .main-container main .left-side .left-side-text a {
-  background-color: #ec864a;
+  background-color: #09aded;
   border-radius: 12px;
   padding: 0.8rem 1.2rem;
-  color: #d3fbd8;
+  color: white;
   font-weight: 500;
   box-shadow: 6px 5px 25px -6px rgba(159, 152, 152, 0.75);
 }
@@ -118,7 +118,7 @@ hr {
 }
 
 .about-section {
-  min-height: 90vh;
+  min-height: 70vh;
   background-color: #1a1a1a;
   display: flex;
   justify-content: center;
@@ -127,7 +127,7 @@ hr {
   position: relative;
 }
 .about-section .about-container {
-  max-width: 700px;
+  max-width: 800px;
   text-align: center;
   color: white;
 }
@@ -192,13 +192,14 @@ hr {
 }
 
 .skills-section {
-  min-height: 80vh;
+  min-height: 70vh;
   background-color: #1a1a1a;
   display: flex;
   justify-content: center;
 }
 .skills-section .skills-container {
-  min-width: 800px;
+  margin-top: 2rem;
+  max-width: 900px;
   color: white;
 }
 .skills-section .skills-container h2 {
@@ -206,65 +207,97 @@ hr {
 }
 .skills-section .skills-container .programming-language {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  gap: 15px;
+  margin-top: 1.5rem;
 }
 .skills-section .skills-container .programming-language .progress-container {
-  width: 40%;
+  min-width: 350px;
+  margin: 1rem 0;
 }
 .skills-section .skills-container .programming-language .progress-container .progress-bar {
-  min-width: 200px;
-  background-color: black;
+  margin-top: 0.5rem;
+  background-color: rgb(114, 113, 113);
   border-radius: 13px;
   padding: 3px;
 }
 .skills-section .skills-container .programming-language .progress-container .progress-bar-content {
   width: 80%;
-  background-color: #ec864a;
+  background-color: #09aded;
   height: 8px;
   border-radius: 10px;
   position: relative;
 }
-.skills-section .skills-container .programming-language .progress-container .progress-bar-content .go {
+.skills-section .skills-container .programming-language .progress-container .go {
   width: 50%;
-  background-color: #ec864a;
+  background-color: #09aded;
+  height: 8px;
+  border-radius: 10px;
+  position: relative;
+}
+.skills-section .skills-container .programming-language .progress-container .react {
+  width: 75%;
+  background-color: #09aded;
   height: 8px;
   border-radius: 10px;
   position: relative;
 }
 .skills-section .skills-container .programming-language .progress-container .progress-bar-content span {
   position: absolute;
-  background-color: #e8874e;
+  background-color: #09aded;
   border-radius: 50%;
-  display: inline-block;
-  height: 18px;
-  width: 20px;
-  top: -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  top: -12px;
+  padding: 5px;
   left: 240px;
-  font-size: 10px;
+  font-size: 14px;
   text-align: center;
+}
+.skills-section .skills-container .programming-language .progress-container .go span {
+  left: 160px;
+}
+.skills-section .skills-container .programming-language .progress-container .react span {
+  left: 230px;
 }
 
 .projects-section {
-  min-height: 90vh;
+  min-height: 100vh;
   background-color: #1a1a1a;
   display: flex;
   justify-content: center;
   color: white;
 }
 .projects-section .projects-container {
-  max-width: 800px;
+  max-width: 1000px;
+}
+.projects-section .projects-container h4 {
+  position: relative;
+  max-width: 550px;
+  font-size: 1.2rem;
+}
+.projects-section .projects-container h4::after {
+  position: absolute;
+  content: "";
+  width: 250px;
+  height: 2px;
+  inset: 0;
+  margin: auto;
+  margin-right: 30px;
+  background-color: white;
 }
 .projects-section .projects-container .project {
-  max-height: 300px;
+  max-height: 400px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(9, 1fr);
   margin-top: 1.5rem;
 }
 .projects-section .projects-container .project img {
-  background-color: hsl(197, 97%, 47%);
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
