@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Yeseva+One&display=swap");
+.containerStyles, .projects-section, .skills-section, .about-section {
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +15,10 @@
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -47,11 +58,11 @@ hr {
 }
 
 .main-section {
-  background-color: #1a1a1a;
   min-height: 80vh;
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: #1a1a1a;
   position: relative;
   z-index: -3;
 }
@@ -71,7 +82,16 @@ hr {
 }
 .main-section .main-container header nav ul li {
   list-style-type: none;
-  margin: 0 1rem;
+}
+.main-section .main-container header nav ul li a {
+  margin: 0 auto;
+  padding: 0.7rem;
+  display: block;
+  width: 5rem;
+  text-align: center;
+}
+.main-section .main-container header nav ul li a:hover {
+  border-bottom: 1.5px solid #09aded;
 }
 .main-section .main-container main {
   display: flex;
@@ -159,11 +179,9 @@ hr {
 }
 
 .about-section {
-  min-height: 60vh;
-  background-color: #1a1a1a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 4rem 0;
   z-index: -2;
   position: relative;
 }
@@ -202,6 +220,7 @@ hr {
   font-weight: 500;
   margin: 0.8rem 0;
   background-image: linear-gradient(to right, #04abec, white);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -242,19 +261,26 @@ hr {
 
 .skills-section {
   min-height: 65vh;
-  background-color: #1a1a1a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .skills-section .skills-container {
-  max-width: 900px;
+  max-width: 1000px;
   color: white;
 }
 .skills-section .skills-container h2 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 500;
+  position: relative;
+  max-width: 650px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.skills-section .skills-container h2::after {
+  position: absolute;
+  content: "";
+  width: 220px;
+  height: 2px;
+  inset: 0;
+  margin: auto;
+  margin-right: 30px;
+  background-color: white;
 }
 .skills-section .skills-container .programming-language {
   display: flex;
@@ -318,10 +344,6 @@ hr {
 
 .projects-section {
   min-height: 100vh;
-  background-color: #1a1a1a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
 }
 .projects-section .projects-container {
@@ -329,13 +351,14 @@ hr {
 }
 .projects-section .projects-container h4 {
   position: relative;
-  max-width: 550px;
-  font-size: 1.2rem;
+  max-width: 660px;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 .projects-section .projects-container h4::after {
   position: absolute;
   content: "";
-  width: 250px;
+  width: 260px;
   height: 2px;
   inset: 0;
   margin: auto;
@@ -356,6 +379,7 @@ hr {
      object-fit: cover;
   grid-column: 1/6;
   grid-row: 1/9;
+  filter: grayscale(30%);
 }
 .projects-section .projects-container .project .project-description {
   grid-column: 5/-1;
@@ -364,6 +388,8 @@ hr {
   padding: 1rem;
   background-color: #16263b;
   border-radius: 4px;
+  position: relative;
+  z-index: 1;
 }
 .projects-section .projects-container .project .project-subtitle {
   grid-column: 7/9;
@@ -409,6 +435,8 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.work-experience-section .work-experience-container {
   max-width: 900px;
 }
 .work-experience-section .vtimeline-point {
@@ -422,4 +450,23 @@ hr {
 }
 .work-experience-section .custom-timeline-content p {
   line-height: 1.3;
+}
+
+.contact-section {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-image: linear-gradient(to top, #0e1d22, #131c21, #171b1f, #1a1a1d, #1a1a1a);
+  /* .card {
+      img {
+
+      }
+      div {
+
+      }
+  } */
 }/*# sourceMappingURL=style.css.map */
