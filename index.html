@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yan Naing Portfolio</title>
-    <link rel="stylesheet" href="./style.css" >
-    <link rel="stylesheet" href="./vertical-timeline.css"
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./vertical-timeline.css">
 </head>
 <body>
     <section class="main-section">
@@ -31,7 +31,7 @@
                         He love exploring and exploiting computer science &#38; emerging technologies. 
                         Full time Web Developer with very different backgound from various domains.    
                         </p>
-                        <a href="#" class="btn">My Works</a>
+                        <a href="#work" class="btn">My Works</a>
                     </div>
                     <div class="main-content">
                         <div class="content-item">
@@ -52,7 +52,7 @@
         </div>
     </section>
     <hr>
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="about-container">
             <div>
                 <img src="./assets/about.png">
@@ -65,50 +65,50 @@
                 </p>
             </div>
             <!-- <div class="btn-container"> -->
-            <a class="btn" href="#">Contact Me</a>
+            <a class="btn" href="#contact">Contact Me</a>
             <!-- </div> -->
         </div>
     </section>
     <hr>
-    <section class="work-experience-section">
-        <div>
-        <div id="vt6">
-            <div data-vtdate="May 2015" class="custom-timeline-content">
-                <h3>Systems Engineer</h3>
-                <h4>Firsttel Tech Pte Ltd, Singapore</h4>
-                <p>
-                    Provisioning and administration of Linux based Server, Ubuntu and Microsoft Windows Server.
-                    Microsoft Windows Server Active Directory and Microsoft Exchange Server Administration.
-                    Installation and configuring of various Server Systems based on VMware vSphere and Hyper-V
-                </p>
-            </div>
-            <div data-vtdate="Dec 2016" class="custom-timeline-content">
-                <h3>Software Engineer</h3>
-                <h4>Hope Technik Pte Ltd, Singapore</h4>
-                <p>
-                    Developing and Maintaining Software Systems running on Linux Platform by leveraging
-                    shell script advantages.Responsible for the whole life cycle of software testing on
-                    Automated Guided Vechicle(AGV) and ensuring production systems worry free.
-                </p>
-            </div>
-            <div data-vtdate="January 2016" class="custom-timeline-content">
-                <h3>Lorem ipsum dolor sit amet</h3>
-                <p>
-                    Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
-                </p>
-            </div>
-            <div data-vtdate="September 2016" class="custom-timeline-content">
-                <h3>Lorem ipsum dolor sit amet</h3>
-                <p>
-                    Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
-                </p>
-            </div>
-        </div><!-- End vt6 -->
-    </div>
+    <section class="work-experience-section" id="work">
+        <div class="work-experience-container">
+            <div id="vt6">
+                <div data-vtdate="May 2015" class="custom-timeline-content">
+                    <h3>Systems Engineer</h3>
+                    <h4>Firsttel Tech Pte Ltd, Singapore</h4>
+                    <p>
+                        Provisioning and administration of Linux based Server, Ubuntu and Microsoft Windows Server.
+                        Microsoft Windows Server Active Directory and Microsoft Exchange Server Administration.
+                        Installation and configuring of various Server Systems based on VMware vSphere and Hyper-V
+                    </p>
+                </div>
+                <div data-vtdate="Dec 2016" class="custom-timeline-content">
+                    <h3>Software Engineer</h3>
+                    <h4>Hope Technik Pte Ltd, Singapore</h4>
+                    <p>
+                        Developing and Maintaining Software Systems running on Linux Platform by leveraging
+                        shell script advantages.Responsible for the whole life cycle of software testing on
+                        Automated Guided Vechicle(AGV) and ensuring production systems worry free.
+                    </p>
+                </div>
+                <div data-vtdate="January 2016" class="custom-timeline-content">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>
+                        Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
+                    </p>
+                </div>
+                <div data-vtdate="September 2016" class="custom-timeline-content">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>
+                        Proin mattis nisl non est dapibus elementum. Etiam varius, purus sodales varius tempor, mauris nunc hendrerit velit, vitae interdum quam erat non lorem. Fusce luctus malesuada neque nec pretium. In sed turpis dui.
+                    </p>
+                </div>
+            </div><!-- End vt6 -->
+        </div>
     </section>
-    <section class="skills-section">
+    <section class="skills-section" id="skills">
         <div class="skills-container">
-            <h2>Skills</h2>
+            <h2>CornerStone and Skills I've Acquired</h2>
             <div class="programming-language">
                 <div class="progress-container">
                     <span>Javascript</span>
@@ -197,9 +197,9 @@
         </div>
     </section>
     <hr>
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
         <div class="projects-container">
-            <h4>Some of the Projects I've Built</h4>
+            <h4>Some of the Projects I have Built</h4>
             <div class="project">
                 <img class="project-overview" src="./assets/project1.png">
                 <p class="project-description">
@@ -236,6 +236,20 @@
                     </ul>
 
                 </div> -->
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="contact-section" id="contact">
+        <div class="card">
+            <img src="./assets/contact_photo.png">
+            <div>
+                <h3>Yan Naing</h3>
+                <div>
+                    <p>as.yannainghtun@gmail.com</p>
+                    <p>0966507126</p>
+                    <p>Bangkok,Thailand</p>
+                </div>
             </div>
         </div>
     </section>
