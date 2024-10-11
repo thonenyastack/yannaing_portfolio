@@ -355,7 +355,7 @@ hr {
     .projects-container {
         max-width: 1000px;
         h4 {
-            @include headerStyles(660px, 260px)
+            @include headerStyles(655px, 260px)
         }
         .project {
             max-height: 400px;
