@@ -461,12 +461,8 @@ hr {
   height: -moz-fit-content;
   height: fit-content;
   background-image: linear-gradient(to top, #0e1d22, #131c21, #171b1f, #1a1a1d, #1a1a1a);
-  /* .card {
-      img {
-
-      }
-      div {
-
-      }
-  } */
+}
+.contact-section .contact-container .card {
+  width: 300px;
+  background-color: #04abec;
 }/*# sourceMappingURL=style.css.map */

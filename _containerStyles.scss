@@ -1,4 +1,5 @@
-$primary-color : #1a1a1a;
+@import './colorVariables';
+
 .containerStyles {
     background-color: $primary-color;
     display: flex;
